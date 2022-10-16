@@ -42,16 +42,11 @@ addButton.onclick = function() {
             this.parentElement.style.backgroundColor = '#24B670';
             this.previousElementSibling.style.textDecoration = 'line-through';
 
-            this.style.backgroundColor = '#FFFFFF';
-            this.firstElementChild.style.color = '#24B670';
-
-            this.firstElementChild.classList.remove('fa-solid', 'fa-check');
-            this.firstElementChild.classList.add('fa-solid', 'fa-xmark')
-
-            this.firstElementChild.style.fontSize = '24px';
-
             this.nextElementSibling.style.backgroundColor = '#FFFFFF';
             this.nextElementSibling.firstChild.style.color = '#24B670';
+
+            this.remove();
+            this.remove();         
         }
     };
 
