@@ -69,6 +69,8 @@ addButton.onclick = function() {
             this.parentElement.remove();
         }
     };
+        //reset "taskName" value
+    taskName.value = '';
 }
     
 };
